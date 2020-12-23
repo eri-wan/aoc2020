@@ -67,8 +67,8 @@ def main():
         for is_not_allergen in not_allergen:
             count += is_not_allergen in ingredients
 
-    print(f"Number of non-allergen items: {len(wrong_approach)}, count appear: {count} ({wrong_approach})")
-    print(f"Other approach: {len(not_allergen)}: {not_allergen}")
+    print(f"Number of non-allergen items: {len(not_allergen)}, count appear: {count} ({not_allergen})")
+    print(f"Other approach: {len(wrong_approach)}: {wrong_approach}")
 
 if __name__ == "__main__":
     main()
