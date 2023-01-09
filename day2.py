@@ -16,13 +16,11 @@ def append_if_exists(dictionary: dict, key, val):
     dictionary[key].append(val)
 
 def main():
-    lines = []
+    file_contents = ''
     with open(inputfile) as infile:
-        while True:
-            line = infile.readline()
-            if not line:
-                break
-            lines.append(line.strip())
+        file_contents = infile.read()
+    
+    lines = file_contents.splitlines()
     
     print(f"Read {len(lines)} lines")
 
