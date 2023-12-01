@@ -1,6 +1,9 @@
 # Pycharm
 .idea
 
+# vscode
+.vscode
+
 # Prerequisites
 *.d
 
